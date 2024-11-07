@@ -14,6 +14,9 @@
 }
 
 header {
+    position: fixed;
+    width: 100%;
+    background: white;
     height: 96px;
     display: flex;
     justify-content: space-between;
@@ -50,7 +53,7 @@ nav>ul>li {
     align-items: center;
     gap: 12px;
 }
-
+/* 
 .buttons__header>button:first-child {
     color: #4840BB;
 }
@@ -58,9 +61,22 @@ nav>ul>li {
 .buttons__header>button:last-child {
     background: #4840BB;
     color: white;
+} */
+
+.buttons__header>button:hover{
+    background: #4840BB;
+    color: white;
+    transition: all 0.5s ease;
+    cursor:pointer;
 }
 
+.buttons__header>button{
+    transition: all 0.5s ease;
+}
+
+
 .banner {
+    padding-top: 96%;
     padding: 0 64px;
     display: flex;
     align-items: center;
@@ -104,4 +120,61 @@ nav>ul>li {
     color: white;
     font-size: 16px;
 
+}
+.for_pos {
+    height: 100vh;
+    background-color: #230B59;
+    position: relative;
+}
+
+.for_pos>div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 110px;
+    right: 120px;
+    z-index: 1;
+}
+
+#div2{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 190px;
+    right: 105px;
+    z-index: 2;
+}
+
+#div3{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 290px;
+    right: 100px;
+}
+
+#div4{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    top: 38.5px;
+    right: 855px;
+    z-index: 6;
+    background-color: red;
+}
+
+
+#h3{
+    position: fixed;
+    top: 38.5px;
+    right: 855px;
+    z-index: 7;
+    background-color: black;
 }
